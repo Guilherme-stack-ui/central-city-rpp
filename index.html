@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central City RP - Compre Coins</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0a1a2f; /* Azul escuro profundo */
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #005bea, #00c6fb);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Navegação */
+        nav {
+            background-color: #003366;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00d1ff;
+        }
+
+        /* Seção de Produtos */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product {
+            background: #112240;
+            border-radius: 10px;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 91, 234, 0.3);
+        }
+
+        .product h3 {
+            color: #00c6fb;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .product p {
+            margin-bottom: 15px;
+            color: #cccccc;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, #005bea, #00c6fb);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to right, #0044b0, #009edb);
+            transform: scale(1.05);
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            background-color: #001f3f;
+            color: #cccccc;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #00c6fb;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>🛒 Central City RP</h1>
+        <p>Compre coins e potencialize sua experiência no servidor!</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#suporte">Suporte</a>
+        <a href="#login">Login</a>
+    </nav>
+
+    <!-- Seção de Produtos -->
+    <div class="container" id="produtos">
+        <h2 style="text-align: center; margin: 40px 0; color: #00c6fb; font-size: 2rem;">Pacotes de Coins</h2>
+        <div class="products">
+            <!-- Produto 1 -->
+            <div class="product">
+                <h3>Starter Pack</h3>
+                <p>Perfeito para quem está começando!</p>
+                <div class="price">R$ 19,90</div>
+                <p>1.000 Coins + Skin exclusiva</p>
+                <a href="#" class="btn">Comprar Agora</a>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product">
+                <h3>Pro Pack</h3>
+                <p>Para jogadores que querem se destacar!</p>
+                <div class="price">R$ 49,90</div>
+                <p>3.000 Coins + Veículo exclusivo</p>
+                <a href="#" class="btn">Comprar Agora</a>
+            </div>
+
+            <!-- Produto 3 (Destaque) -->
+            <div class="product">
+                <h3>Premium Pack</h3>
+                <p>O melhor custo-benefício!</p>
+                <div class="price">R$ 89,90</div>
+                <p>7.000 Coins + Veículo + Skin + Casa VIP</p>
+                <a href="#" class="btn">Comprar Agora</a>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="product">
+                <h3>Ultimate Pack</h3>
+                <p>Para os verdadeiros chefões!</p>
+                <div class="price">R$ 149,90</div>
+                <p>15.000 Coins + Super Carro + Membro VIP</p>
+                <a href="#" class="btn">Comprar Agora</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Central City RP. Todos os direitos reservados.</p>
+        <p>Entre em contato: <a href="mailto:suporte@centralcityrp.com">suporte@centralcityrp.com</a></p>
+        <p>Servidor SAMP: <strong>play.centralcityrp.com:7777</strong></p>
+    </footer>
+</body>
+</html>
